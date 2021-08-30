@@ -45,7 +45,7 @@ public class Deposit {
 	 Deposit cash = new Deposit ("Liana123", 213.7); 
 	 cash.depsoitMoney("Hello123", 300.7); 
 	 System.out.println(cash.currentMoney("Hello227")); 
-	 
+	 System.out.print((true);
 	  
   }
 }
