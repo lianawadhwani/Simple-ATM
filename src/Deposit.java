@@ -1,19 +1,8 @@
 import java.util.*; 
 
 public class Deposit {
-  private String atmID;
-  private double balance;
   private HashMap <String,Double >  account; 
-  
-  public Deposit(String ident, double amount){
-	  balance=amount; 
-	  //System.out.println(balance); 
-	  atmID=ident; 
-	  account=new HashMap <String, Double>(); 
-	  account.put(atmID,balance); 
-	 //  System.out.println(account.get(atmID)); 
-  }
-  
+ 
   public Deposit() {
 	  account=new HashMap <String, Double>(); 
   }
@@ -54,22 +43,17 @@ public void withdraw(String iD, double amount) {
 
 
  public static void main (String[] args) {
-	 Deposit cash = new Deposit ("Liana123", 213.7); 
-	 cash.deposit("Bezos", 300.7); 
-	 cash.deposit("Winfrey", 25159684372.43);
-	 cash.deposit("Bezos", 193495330293.43);
-	 System.out.println(cash.checkBalance("Bezos"));
-	 System.out.println(cash.checkBalance("Winfrey"));
-	 cash.deposit("Bezos", 20394353.35);
-	 System.out.println(cash.checkBalance("Bezos"));
-	 cash.withdraw("Bezos", 3593293.66);
-	 cash.deposit("MrTheiss",64033.55);
-	 cash.withdraw("MrTheiss", 443964.46);
-	 System.out.println(cash.checkBalance("YoMama"));
-	 System.out.println(cash.checkBalance("MrTheiss"));
-	 System.out.println(cash.checkBalance("Bezos"));
-	 System.out.println(cash.checkBalance("Winfrey")); 
-//	  
+	 Deposit cash = new Deposit (); 
+		cash.deposit("Winfrey", 25159684372.43);
+		cash.deposit("Bezos", 193495330293.43);
+		cash.deposit("Bezos", 20394353.35);
+		cash.withdraw("Bezos", 3593293.66);
+		cash.deposit("MrTheiss",64033.55);
+		cash.withdraw("MrTheiss", 443964.46);
+		System.out.println(cash.checkBalance("Bezos")); 
+		System.out.println(cash.checkBalance("Winfrey")); 
+		cash.checkBalance("YoMama");
+		System.out.println(cash.checkBalance("MrTheiss"));  
   }
 }
 
