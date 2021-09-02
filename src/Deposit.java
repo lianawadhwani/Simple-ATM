@@ -73,6 +73,6 @@ public void withdraw(String iD, double amount) {
   }
 }
 
- // note to self, instead of importig or opening project just create a new one and set path to local repository on desktop
+ // note to self, instead of importing or opening project just create a new one and set path to local repository on desktop
  
 
